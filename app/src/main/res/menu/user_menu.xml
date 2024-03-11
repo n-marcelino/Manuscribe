@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/user_bind"
+        android:icon="@drawable/ic_book_circle_plus"
+        android:title="New Bookbind" />
+    <item
+        android:id="@+id/user_library"
+        android:icon="@drawable/ic_book_solid"
+        android:title="Library" />
+    <item
+        android:id="@+id/user_cart"
+        android:icon="@drawable/ic_cart_shopping_solid"
+        android:title="Cart" />
+</menu>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Manuscribe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/manu</item>
+        <item name="android:textViewStyle">@style/AdaminaTextViewStyle</item>
+        <item name="android:buttonStyle">@style/AdaminaButtonStyle</item>
+
+    </style>
+
+    <style name="Theme.Manuscribe" parent="Base.Theme.Manuscribe" />
+
+    <style name="AdaminaTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/adamina</item>
+    </style>
+
+    <style name="AdaminaButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/adamina</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_house_solid"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/ic_magnifying_glass_solid"
+        android:title="Search" />
+    <item
+        android:id="@+id/bottom_bind"
+        android:icon="@drawable/ic_book_circle_plus"
+        android:title="New Bookbind" />
+    <item
+        android:id="@+id/bottom_library"
+        android:icon="@drawable/ic_book_solid"
+        android:title="Library" />
+    <item
+        android:id="@+id/bottom_user"
+        android:icon="@drawable/ic_circle_user_solid"
+        android:title="User" />
+
+</menu>
