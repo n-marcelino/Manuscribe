@@ -20,8 +20,8 @@ class booklist : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
         header.setOnClickListener() {
             startActivity(
@@ -30,8 +30,8 @@ class booklist : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
 
 

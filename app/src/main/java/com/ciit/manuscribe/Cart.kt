@@ -23,8 +23,8 @@ class Cart : AppCompatActivity() {
                     bind_step1::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
 
         val logo = findViewById<ImageView>(R.id.logo)
@@ -36,8 +36,8 @@ class Cart : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
         header.setOnClickListener() {
             startActivity(
@@ -46,8 +46,8 @@ class Cart : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
@@ -61,8 +61,8 @@ class Cart : AppCompatActivity() {
                             MainActivity::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -73,8 +73,8 @@ class Cart : AppCompatActivity() {
 //                            SearchActivity::class.java
 //                        )
 //                    )
-//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-//                    finish()
+//
+//                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -85,8 +85,8 @@ class Cart : AppCompatActivity() {
                             bind_step1::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -97,8 +97,8 @@ class Cart : AppCompatActivity() {
                             booklist::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -109,7 +109,7 @@ class Cart : AppCompatActivity() {
                             User::class.java
                         )
                     )
-                    finish()
+                    
                     return@setOnItemSelectedListener true
                 }
             }

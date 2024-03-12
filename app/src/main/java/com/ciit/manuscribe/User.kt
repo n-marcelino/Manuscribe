@@ -23,8 +23,8 @@ class User : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
         header.setOnClickListener() {
             startActivity(
@@ -33,8 +33,8 @@ class User : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
+
+            
         }
 
         val userNavigationView = findViewById<BottomNavigationView>(R.id.userNavigation)
@@ -48,8 +48,8 @@ class User : AppCompatActivity() {
                             bind_step1::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -60,8 +60,8 @@ class User : AppCompatActivity() {
                             booklist::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -72,7 +72,7 @@ class User : AppCompatActivity() {
                             Cart::class.java
                         )
                     )
-                    finish()
+                    
                     return@setOnItemSelectedListener true
                 }
             }

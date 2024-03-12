@@ -29,8 +29,6 @@ class bind_step1 : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
         }
         val cancel = findViewById<Button>(R.id.cancel)
         cancel.setOnClickListener() {
@@ -40,8 +38,6 @@ class bind_step1 : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
         }
         val next = findViewById<Button>(R.id.next)
         next.setOnClickListener() {
@@ -51,9 +47,6 @@ class bind_step1 : AppCompatActivity() {
                     bind_step2::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            finish()
         }
-
     }
 }

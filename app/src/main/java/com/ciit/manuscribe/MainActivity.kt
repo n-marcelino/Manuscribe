@@ -7,10 +7,12 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                     Cart::class.java
                 )
             )
-            finish()
+            
         }
 
 
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            finish()
+            
         }
         header.setOnClickListener() {
             startActivity(
@@ -44,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            finish()
+            
         }
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNavigationView.selectedItemId = R.id.bottom_home
@@ -59,8 +61,8 @@ class MainActivity : AppCompatActivity() {
 //                            SearchActivity::class.java
 //                        )
 //                    )
-//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-//                    finish()
+//                    
+//                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -71,8 +73,8 @@ class MainActivity : AppCompatActivity() {
                             bind_step1::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+                    
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -83,8 +85,8 @@ class MainActivity : AppCompatActivity() {
                             booklist::class.java
                         )
                     )
-                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                    finish()
+                    
+                    
                     return@setOnItemSelectedListener true
                 }
 
@@ -95,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                             User::class.java
                         )
                     )
-                    finish()
+                    
                     return@setOnItemSelectedListener true
                 }
             }
