@@ -77,14 +77,14 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.bottom_library -> {
-//                    startActivity(
-//                        Intent(
-//                            applicationContext,
-//                            SearchActivity::class.java
-//                        )
-//                    )
-//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-//                    finish()
+                    startActivity(
+                       Intent(
+                           applicationContext,
+                            booklist::class.java
+                       )
+                    )
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    finish()
                     return@setOnItemSelectedListener true
                 }
 
