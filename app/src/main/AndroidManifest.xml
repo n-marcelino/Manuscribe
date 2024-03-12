@@ -13,13 +13,7 @@
         android:theme="@style/Theme.Manuscribe"
         tools:targetApi="31">
         <activity
-            android:name=".bind_step4"
-            android:exported="false" />
-        <activity
-            android:name=".bind_step3"
-            android:exported="false" />
-        <activity
-            android:name=".bind_step2"
+            android:name=".booklist"
             android:exported="false" />
         <activity
             android:name=".bind_step1"

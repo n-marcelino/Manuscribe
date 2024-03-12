@@ -54,14 +54,14 @@ class User : AppCompatActivity() {
                 }
 
                 R.id.user_library -> {
-//                    startActivity(
-//                        Intent(
-//                            applicationContext,
-//                            bind_step1::class.java
-//                        )
-//                    )
-//                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-//                    finish()
+                    startActivity(
+                        Intent(
+                            applicationContext,
+                            booklist::class.java
+                        )
+                    )
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+                    finish()
                     return@setOnItemSelectedListener true
                 }
 
