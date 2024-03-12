@@ -3,6 +3,7 @@
     <style name="Base.Theme.Manuscribe" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/manu</item>
+        <item name="android:fontFamily">@font/adamina</item>
         <item name="android:textViewStyle">@style/AdaminaTextViewStyle</item>
         <item name="android:buttonStyle">@style/AdaminaButtonStyle</item>
 
