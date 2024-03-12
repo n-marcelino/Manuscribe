@@ -19,6 +19,15 @@
             android:name=".bind_step1"
             android:exported="false" />
         <activity
+            android:name=".bind_step2"
+            android:exported="false" />
+        <activity
+            android:name=".bind_step3"
+            android:exported="false" />
+        <activity
+            android:name=".bind_step4"
+            android:exported="false" />
+        <activity
             android:name=".Cart"
             android:exported="false" />
         <activity

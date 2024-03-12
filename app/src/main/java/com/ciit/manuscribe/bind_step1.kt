@@ -48,5 +48,6 @@ class bind_step1 : AppCompatActivity() {
                 )
             )
         }
+
     }
 }

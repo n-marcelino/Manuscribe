@@ -20,8 +20,6 @@ class booklist : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-
-            
         }
         header.setOnClickListener() {
             startActivity(
@@ -30,10 +28,7 @@ class booklist : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-
-            
         }
-
 
     }
 }
