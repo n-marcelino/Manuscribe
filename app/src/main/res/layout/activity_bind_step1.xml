@@ -148,7 +148,7 @@
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Space
+            <android.widget.Space 
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
@@ -1154,7 +1154,7 @@
                 </LinearLayout>
             </RadioGroup>
 
-            <Space
+            <android.widget.Space 
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
@@ -1174,7 +1174,7 @@
                     android:textColor="#9E7272"
                     app:cornerRadius="0dp" />
 
-                <Space
+                <android.widget.Space 
                     android:layout_width="10dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0" />
