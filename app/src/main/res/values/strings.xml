@@ -43,4 +43,20 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="c22">
+        Catch-22 is a satirical novel set during World War II that follows the experiences of Captain
+        John Yossarian, a U.S. Army Air Forces B-25 bombardier. Yossarian is stationed on the fictional
+        Mediterranean island of Pianosa, where he and his fellow airmen face absurd bureaucratic
+        obstacles and the ever-present threat of death.\n\n
+        The titular Catch-22 is a paradoxical regulation that stipulates a concern for one\'s safety
+        in the face of danger is considered insane, yet a request to be removed from duty on the
+        grounds of insanity demonstrates a rational concern for one\'s safety and is therefore
+        considered sane.\n\n
+        This circular logic traps Yossarian and his comrades in an absurd and nightmarish reality
+        where they are forced to continue flying dangerous missions. As Yossarian navigates the
+        illogical and often hypocritical military bureaucracy, he grapples with the meaning of
+        loyalty, patriotism, and sanity. The novel is renowned for its dark humor, biting satire,
+        and its exploration of the absurdity of war and the human condition.
+    </string>
 </resources>
