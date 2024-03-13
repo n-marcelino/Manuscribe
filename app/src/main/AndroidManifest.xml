@@ -16,6 +16,9 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".page"
+            android:exported="false" />
+        <activity
             android:name=".book"
             android:exported="false" />
         <activity
