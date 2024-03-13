@@ -37,7 +37,7 @@ class booklist : AppCompatActivity() {
             startActivity(
                 Intent(
                     applicationContext,
-                    page::class.java
+                    book::class.java
                 )
             )
 
