@@ -182,7 +182,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:minLines="5"/>
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:maxLines="5"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <android.widget.Space 
