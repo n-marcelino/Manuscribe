@@ -21,7 +21,7 @@ class book : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            
             finish()
         }
         header.setOnClickListener() {
@@ -31,7 +31,7 @@ class book : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            
             finish()
         }
 
@@ -43,7 +43,7 @@ class book : AppCompatActivity() {
                     bind_step1::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            
             finish()
         }
 
@@ -55,7 +55,7 @@ class book : AppCompatActivity() {
                     page::class.java
                 )
             )
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            
             finish()
         }
     }
