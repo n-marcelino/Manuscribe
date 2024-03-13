@@ -32,17 +32,17 @@ class booklist : AppCompatActivity() {
             )
             finish()
         }
-//        val image = findViewById<ImageView>(R.id.bookCover)
-//        image.setOnClickListener() {
-//            startActivity(
-//                Intent(
-//                    applicationContext,
-//                    page::class.java
-//                )
-//            )
-//            
-//            finish()
-//        }
+        val image = findViewById<ImageView>(R.id.bookCover)
+        image.setOnClickListener() {
+            startActivity(
+                Intent(
+                    applicationContext,
+                    page::class.java
+                )
+            )
+
+            finish()
+        }
 
     }
 }
