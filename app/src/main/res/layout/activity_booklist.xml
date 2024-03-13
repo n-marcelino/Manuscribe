@@ -8,6 +8,12 @@
     tools:context=".booklist">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/gradient_black" />
+
+    <ImageView
         android:id="@+id/logo"
         android:layout_width="34dp"
         android:layout_height="28dp"
@@ -77,43 +83,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="#FFFFFF"
-        android:fillViewport="true"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/likedBooks"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SpeakableTextPresentCheck">
+        app:layout_constraintTop_toBottomOf="@+id/likedBooks" >
 
-        <LinearLayout
+        <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            app:alignContent="space_between"
+            app:alignItems="stretch"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/c22"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="25%">
 
                 <ImageView
                     android:id="@+id/bookCover"
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/c22"/>
+                    android:src="@drawable/c22" />
 
                 <TextView
                     android:id="@+id/bookTitle"
@@ -122,8 +125,7 @@
                     android:gravity="center"
                     android:text="Catch-22"
                     android:textColor="@color/manu"
-                    android:textSize="15sp"
-                     />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/bookAuthor"
@@ -131,25 +133,24 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Joseph Heller"
-                    android:textSize="12sp"
-                     />
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="25%">
 
                 <ImageView
                     android:id="@+id/bookCover2"
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/hanginghouse"/>
+                    android:src="@drawable/hanginghouse" />
 
                 <TextView
                     android:id="@+id/bookTitle2"
@@ -158,8 +159,7 @@
                     android:gravity="center"
                     android:text="Hanging House"
                     android:textColor="@color/manu"
-                    android:textSize="15sp"
-                    />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/bookAuthor2"
@@ -167,25 +167,24 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Dean Rasmussen"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_flexBasisPercent="25%">
 
                 <ImageView
                     android:id="@+id/bookCover3"
-                    android:layout_width="75dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:src="@drawable/pnp"/>
+                    android:src="@drawable/pnp" />
 
                 <TextView
                     android:id="@+id/bookTitle3"
@@ -203,16 +202,11 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Jane Austen"
-                    android:textSize="12sp"
-                     />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
-        </LinearLayout>
-
-
-
-
-    </androidx.cardview.widget.CardView>
+        </com.google.android.flexbox.FlexboxLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 
 class booklist : AppCompatActivity() {
@@ -32,8 +33,8 @@ class booklist : AppCompatActivity() {
             )
             finish()
         }
-        val image = findViewById<ImageView>(R.id.bookCover)
-        image.setOnClickListener() {
+        val c22 = findViewById<LinearLayout>(R.id.c22)
+        c22.setOnClickListener() {
             startActivity(
                 Intent(
                     applicationContext,
