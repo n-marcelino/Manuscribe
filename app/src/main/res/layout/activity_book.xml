@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".book">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:tintMode="src_in"
+        app:layout_constraintEnd_toStartOf="@+id/header"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_book_open_solid"
+        app:tint="@color/manu"
+        />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/adamina"
+        android:text="manuscribe"
+        android:textColor="@color/manu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="48dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/catch22" />
+
+    <TextView
+        android:id="@+id/Genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Genre:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Author" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/adamina"
+        android:text="Title:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PublicationYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Publication Year:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Publisher" />
+
+    <TextView
+        android:id="@+id/Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Author:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/Publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Publisher:"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genre" />
+
+    <Button
+        android:id="@+id/bindbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/manu"
+        android:fontFamily="@font/adamina"
+        android:text="Bind It!"
+        android:textAllCaps="false"
+        android:textColor="#F6F6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PublicationYear"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="420dp"
+        android:fontFamily="@font/adamina"
+        android:text="Synopsis"
+        android:textColor="#814256"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/synDescription"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/adamina"
+        android:text="Catch-22 is a satirical novel set during World War II that follows the experiences of Captain John Yossarian, a U.S. Army Air Forces B-25 bombardier. Yossarian is stationed on the fictional Mediterranean island of Pianosa, where he and his fellow airmen face absurd bureaucratic obstacles and the ever-present threat of death.
+The titular Catch-22 is a paradoxical regulation that stipulates a concern for one's safety in the face of danger is considered insane, yet a request to be removed from duty on the grounds of insanity demonstrates a rational concern for one's safety and is therefore considered sane.
+This circular logic traps Yossarian and his comrades in an absurd and nightmarish reality where they are forced to continue flying dangerous missions. As Yossarian navigates the illogical and often hypocritical military bureaucracy, he grapples with the meaning of loyalty, patriotism, and sanity. The novel is renowned for its dark humor, biting satire, and its exploration of the absurdity of war
+and the human condition."
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ReadBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/manu"
+        android:fontFamily="@font/adamina"
+        android:text="Read here"
+        android:textAllCaps="false"
+        android:textColor="#F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/adamina"
+        android:text="Catch-22"
+        android:textColor="#814256"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Joseph Heller"
+        android:textColor="#814256"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Author"
+        app:layout_constraintTop_toBottomOf="@+id/titleName" />
+
+    <TextView
+        android:id="@+id/genreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Satirical Novel"
+        android:textColor="#814256"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Genre"
+        app:layout_constraintTop_toBottomOf="@+id/authorName" />
+
+    <TextView
+        android:id="@+id/publisherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="Simon  &amp; Schuster"
+        android:textColor="#814256"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Publisher"
+        app:layout_constraintTop_toBottomOf="@+id/genreName" />
+
+    <TextView
+        android:id="@+id/pubYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/adamina"
+        android:text="1961"
+        android:textColor="#814256"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/PublicationYear"
+        app:layout_constraintTop_toBottomOf="@+id/publisherName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
