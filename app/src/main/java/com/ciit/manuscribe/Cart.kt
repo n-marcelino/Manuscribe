@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -115,6 +117,16 @@ class Cart : AppCompatActivity() {
             }
             false
         }
+    }
+    fun toggleOrderDetails(view: View) {
+        val orderLayout = view as LinearLayout
+        val detailsLayout = orderLayout.findViewById<LinearLayout>(R.id.order1_details)
 
+        if (detailsLayout.visibility == View.VISIBLE) {
+            detailsLayout.visibility = View.GONE
+
+        } else {
+            detailsLayout.visibility = View.VISIBLE
+        }
     }
 }
