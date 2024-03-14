@@ -21,8 +21,6 @@ class book : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            
-            finish()
         }
         header.setOnClickListener() {
             startActivity(
@@ -31,8 +29,6 @@ class book : AppCompatActivity() {
                     MainActivity::class.java
                 )
             )
-            
-            finish()
         }
 
         val bind = findViewById<Button>(R.id.bindbtn)
@@ -43,8 +39,6 @@ class book : AppCompatActivity() {
                     bind_step1::class.java
                 )
             )
-            
-            finish()
         }
 
         val readBtn = findViewById<Button>(R.id.ReadBtn)
@@ -55,8 +49,6 @@ class book : AppCompatActivity() {
                     page::class.java
                 )
             )
-            
-            finish()
         }
     }
 }

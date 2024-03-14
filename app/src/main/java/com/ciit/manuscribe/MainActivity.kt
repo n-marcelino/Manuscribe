@@ -3,6 +3,7 @@ package com.ciit.manuscribe
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,6 +16,37 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //assigning onclick listeners for carousel readmes
+        val readbuttons = arrayOf(
+            findViewById<Button>(R.id.ReadBtn),
+            findViewById<Button>(R.id.ReadBtn2),
+            findViewById<Button>(R.id.ReadBtn3),
+            findViewById<Button>(R.id.ReadBtn4),
+            findViewById<Button>(R.id.c2_rb1),
+            findViewById<Button>(R.id.c2_rb2),
+            findViewById<Button>(R.id.c2_rb3),
+            findViewById<Button>(R.id.c2_rb4),
+            findViewById<Button>(R.id.c3_rb1),
+            findViewById<Button>(R.id.c3_rb2),
+            findViewById<Button>(R.id.c3_rb3),
+            findViewById<Button>(R.id.c3_rb4)
+        )
+        // Create a single OnClickListener instance
+        val onClickListener = { view: android.view.View ->
+            // Handle the click event
+            startActivity(
+                Intent(
+                    applicationContext,
+                    book::class.java
+                )
+            )
+
+        }
+        // set where to go
+        readbuttons.forEach { button ->
+            button.setOnClickListener(onClickListener)
+        }
 
         val cart = findViewById<ImageView>(R.id.cart)
         cart.setOnClickListener() {

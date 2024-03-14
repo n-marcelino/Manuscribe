@@ -109,7 +109,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="76dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/carousel1"
@@ -371,7 +372,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="60dp">
+                            android:layout_marginEnd="40dp">
 
                             <ImageView
                                 android:id="@+id/bookCover4"
@@ -381,7 +382,7 @@
                                 android:layout_marginEnd="10dp"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerInside"
-                                android:src="@drawable/pnp"
+                                android:src="@drawable/hanginghouse"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -404,7 +405,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
-                                    android:text="Pride &amp; Prejudice"
+                                    android:text="Hanging House"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
@@ -413,7 +414,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
                                     android:singleLine="true"
-                                    android:text="Jane Austen"
+                                    android:text="Dean Rasmussen"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
@@ -738,7 +739,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="60dp">
+                            android:layout_marginEnd="40dp">
 
                             <ImageView
                                 android:id="@+id/c2_bc4"
@@ -748,7 +749,7 @@
                                 android:layout_marginEnd="10dp"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerInside"
-                                android:src="@drawable/pnp"
+                                android:src="@drawable/hanginghouse"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/c2_info4"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -771,7 +772,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
-                                    android:text="Pride &amp; Prejudice"
+                                    android:text="Hanging House"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
@@ -780,7 +781,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
                                     android:singleLine="true"
-                                    android:text="Jane Austen"
+                                    android:text="Dean Rasmussen"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
@@ -1104,7 +1105,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="60dp">
+                            android:layout_marginEnd="40dp">
 
                             <ImageView
                                 android:id="@+id/c3_bc4"
@@ -1114,7 +1115,7 @@
                                 android:layout_marginEnd="10dp"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerInside"
-                                android:src="@drawable/pnp"
+                                android:src="@drawable/hanginghouse"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/c3_info4"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -1137,7 +1138,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
-                                    android:text="Pride &amp; Prejudice"
+                                    android:text="Hanging House"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
@@ -1146,7 +1147,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="start"
                                     android:singleLine="true"
-                                    android:text="Jane Austen"
+                                    android:text="Dean Rasmussen"
                                     android:textColor="@color/black"
                                     android:textSize="16sp" />
 
