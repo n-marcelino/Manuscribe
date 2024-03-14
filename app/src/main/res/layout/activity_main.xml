@@ -108,8 +108,1109 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/carousel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/carousel_caption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Today's featured books"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All "
+                            android:textColor="#817D7D" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chevrons_right"
+                            app:tint="#FF817D7D" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/carousel_items1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_caption1"
+                    tools:layout_editor_absoluteX="48dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteX="541dp">
+
+                            <ImageView
+                                android:id="@+id/bookCover"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/c22"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/bookCover">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Catch - 22"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Joseph Heller"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/ReadBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/bookCover2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/theoutsider"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/linearLayout4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/bookCover2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="The Outsider"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Stephen King"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/ReadBtn2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@id/bookCover3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/bookCover3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/ReadBtn3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="60dp">
+
+                            <ImageView
+                                android:id="@+id/bookCover4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/bookCover4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/ReadBtn4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_items1">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/selected_dot"
+                        android:translationX="28dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-28dp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/carousel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/carousel_caption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Recommendations for you"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/see_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All "
+                            android:textColor="#817D7D" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chevrons_right"
+                            app:tint="#FF817D7D" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/carousel_items2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_caption2"
+                    tools:layout_editor_absoluteX="48dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteX="541dp">
+
+                            <ImageView
+                                android:id="@+id/c2_bc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/c22"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c2_info1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c2_info1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c2_bc1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Catch - 22"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Joseph Heller"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c2_rb1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/c2_bc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/theoutsider"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/c2_info2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c2_info2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c2_bc2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="The Outsider"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Stephen King"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c2_rb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@id/c2_bc3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c2_info3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c2_info3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c2_bc3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c2_rb3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="60dp">
+
+                            <ImageView
+                                android:id="@+id/c2_bc4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c2_info4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c2_info4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c2_bc4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c2_rb4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_items2">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/selected_dot"
+                        android:translationX="28dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-28dp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/carousel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/carousel_caption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Webtoons"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All "
+                            android:textColor="#817D7D" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_chevrons_right"
+                            app:tint="#FF817D7D" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/carousel_items3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_caption3"
+                    tools:layout_editor_absoluteX="48dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteX="541dp">
+
+                            <ImageView
+                                android:id="@+id/c3_bc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/c22"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c3_info1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c3_info1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c3_bc1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Catch - 22"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Joseph Heller"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c3_rb1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/c3_bc2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/theoutsider"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/c3_info2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c3_info2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c3_bc2">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="The Outsider"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Stephen King"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c3_rb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@id/c3_bc3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c3_info3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c3_info3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c3_bc3">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c3_rb3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="60dp">
+
+                            <ImageView
+                                android:id="@+id/c3_bc4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/pnp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/c3_info4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/c3_info4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical"
+                                app:layout_constrainedWidth="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/c3_bc4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Pride &amp; Prejudice"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="Jane Austen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/c3_rb4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/manu"
+                                    android:fontFamily="@font/adamina"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Read here"
+                                    android:textAllCaps="false"
+                                    android:textColor="#F6F6F6"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_items3">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/selected_dot"
+                        android:translationX="28dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-9dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/default_dot"
+                        android:translationX="-28dp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -116,6 +116,7 @@
                     android:id="@+id/bookCover"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
+                    android:adjustViewBounds="true"
                     android:src="@drawable/c22" />
 
                 <TextView
@@ -150,6 +151,7 @@
                     android:id="@+id/bookCover2"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
+                    android:adjustViewBounds="true"
                     android:src="@drawable/hanginghouse" />
 
                 <TextView
@@ -184,6 +186,7 @@
                     android:id="@+id/bookCover3"
                     android:layout_width="wrap_content"
                     android:layout_height="150dp"
+                    android:adjustViewBounds="true"
                     android:src="@drawable/pnp" />
 
                 <TextView

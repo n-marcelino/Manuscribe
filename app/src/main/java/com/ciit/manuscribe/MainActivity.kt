@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
             
         }
 
-
         val logo = findViewById<ImageView>(R.id.logo)
         val header = findViewById<TextView>(R.id.header)
         logo.setOnClickListener() {
