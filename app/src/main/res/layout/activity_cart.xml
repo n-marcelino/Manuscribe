@@ -165,6 +165,7 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/order1_dropdown_btn"
             android:layout_width="35dp"
             android:layout_height="20dp"
             android:layout_weight="0"
