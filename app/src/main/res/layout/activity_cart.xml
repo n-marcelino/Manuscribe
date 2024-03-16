@@ -89,555 +89,665 @@
             android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:text="Your Orders"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchbarlayout" />
-
-    <LinearLayout
-        android:id="@+id/order1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:clickable="true"
-        android:gravity="center_vertical"
-        android:onClick="toggleOrderDetails"
-        android:orientation="horizontal"
-        android:padding="5dp"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="417dp"
+        android:layout_height="587dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView2">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_weight="3"
-            app:srcCompat="@drawable/ic_book_open_solid"
-            app:tint="@color/manu" />
+        app:layout_constraintTop_toBottomOf="@+id/searchbarlayout" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="To The Ones We Once Loved (Black &amp; White)"
-                android:textColor="@color/manu"
-                android:textSize="14sp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Your Orders"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <LinearLayout
+                android:id="@+id/order1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
+                android:clickable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:onClick="toggleOrderDetails"
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="5dp"
-                    app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_book_open_solid"
                     app:tint="@color/manu" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:singleLine="true"
-                    android:text="39 Lorem St. Ipsum City, Manila, Philippines"
-                    android:textColor="#8C8484"
-                    android:textSize="12sp" />
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="To The Ones We Once Loved (Black &amp; White)"
+                        android:textColor="@color/manu"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+                            app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                            app:tint="@color/manu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="39 Lorem St. Ipsum City, Manila, Philippines"
+                            android:textColor="#8C8484"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/order1_dropdown_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/angle_down_solid"
+                    app:tint="@color/manu" />
+
+                <!-- Additional details layout (initially hidden) -->
             </LinearLayout>
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/order1_dropdown_btn"
-            android:layout_width="35dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/angle_down_solid"
-            app:tint="@color/manu" />
-
-        <!-- Additional details layout (initially hidden) -->
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order1_details"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:backgroundTint="#606060"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/order1">
-
-        <!-- Details rows -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trim Size:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="5x8" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cover:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="Softcover" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Minimum Page #:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="48" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Maximum Page #:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="900" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Paper Specifications:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="50lb, acid-free" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Paper Color:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="White or Creme" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mode of Payment:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="COD" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Shipping Address:" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:text="39 Lorem St. Ipsum City, Manila, Philippines" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/order1_details">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_weight="3"
-
-            app:srcCompat="@drawable/ic_book_open_solid"
-            app:tint="@color/manu" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="Book 2 (Black &amp; White)"
-                android:textColor="@color/manu"
-                android:textSize="14sp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="5dp"
-
-                    app:srcCompat="@drawable/ic_location_crosshairs_solid"
-                    app:tint="@color/manu" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:singleLine="true"
-                    android:text="39 Lorem St. Ipsum City, Manila, Philippines"
-                    android:textColor="#8C8484"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
-
-            app:srcCompat="@drawable/angle_down_solid"
-            app:tint="@color/manu" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/order2">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_weight="3"
-
-            app:srcCompat="@drawable/ic_book_open_solid"
-            app:tint="@color/manu" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <TextView
+                android:id="@+id/order1_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="Book 3 (Coloured)"
-                android:textColor="@color/manu"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
+                android:backgroundTint="#606060"
+                android:clickable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:paddingEnd="20dp">
 
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="5dp"
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    app:srcCompat="@drawable/ic_location_crosshairs_solid"
-                    app:tint="@color/manu" />
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:singleLine="true"
-                    android:text="39 Lorem St. Ipsum City, Manila, Philippines"
-                    android:textColor="#8C8484"
-                    android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Trim Size"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='5" x 8"'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Cover"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='Softcover'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Minimum Page #"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='48'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Paper Specifications"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='50 lb, acid-free'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Paper Color"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='White or Creme'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Maximum Page #"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='900'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Mode of Payment"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='COD'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text="Shipping Address"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:clickable="false"
+                                android:fontFamily="@font/adamina"
+                                android:text='39 Lorem St. Ipsum City, Manila, Philippines'
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </TableLayout>
             </LinearLayout>
 
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
-
-            app:srcCompat="@drawable/angle_down_solid"
-            app:tint="@color/manu" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/order3">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_weight="3"
-
-            app:srcCompat="@drawable/ic_book_open_solid"
-            app:tint="@color/manu" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/order2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="Book 4 (Coloured Hardcover)"
-                android:textColor="@color/manu"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="3"
 
-                    app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                    app:srcCompat="@drawable/ic_book_open_solid"
                     app:tint="@color/manu" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:singleLine="true"
-                    android:text="39 Lorem St. Ipsum City, Manila, Philippines"
-                    android:textColor="#8C8484"
-                    android:textSize="12sp" />
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Book 2 (Black &amp; White)"
+                        android:textColor="@color/manu"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+
+                            app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                            app:tint="@color/manu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="39 Lorem St. Ipsum City, Manila, Philippines"
+                            android:textColor="#8C8484"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+
+                    app:srcCompat="@drawable/angle_down_solid"
+                    app:tint="@color/manu" />
             </LinearLayout>
 
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
-
-            app:srcCompat="@drawable/angle_down_solid"
-            app:tint="@color/manu" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/order5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/bottom_background_light"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/order4">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_weight="3"
-
-            app:srcCompat="@drawable/ic_book_open_solid"
-            app:tint="@color/manu" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/order3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="Book 5 (Black &amp; White)"
-                android:textColor="@color/manu"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="3"
 
-                    app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                    app:srcCompat="@drawable/ic_book_open_solid"
                     app:tint="@color/manu" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:singleLine="true"
-                    android:text="39 Lorem St. Ipsum City, Manila, Philippines"
-                    android:textColor="#8C8484"
-                    android:textSize="12sp" />
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Book 3 (Coloured)"
+                        android:textColor="@color/manu"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+
+                            app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                            app:tint="@color/manu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="39 Lorem St. Ipsum City, Manila, Philippines"
+                            android:textColor="#8C8484"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+
+                    app:srcCompat="@drawable/angle_down_solid"
+                    app:tint="@color/manu" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/order4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="3"
+
+                    app:srcCompat="@drawable/ic_book_open_solid"
+                    app:tint="@color/manu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Book 4 (Coloured Hardcover)"
+                        android:textColor="@color/manu"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+
+                            app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                            app:tint="@color/manu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="39 Lorem St. Ipsum City, Manila, Philippines"
+                            android:textColor="#8C8484"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+
+                    app:srcCompat="@drawable/angle_down_solid"
+                    app:tint="@color/manu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bottom_background_light"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="3"
+
+                    app:srcCompat="@drawable/ic_book_open_solid"
+                    app:tint="@color/manu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Book 5 (Black &amp; White)"
+                        android:textColor="@color/manu"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+
+                            app:srcCompat="@drawable/ic_location_crosshairs_solid"
+                            app:tint="@color/manu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="39 Lorem St. Ipsum City, Manila, Philippines"
+                            android:textColor="#8C8484"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0"
+
+                    app:srcCompat="@drawable/angle_down_solid"
+                    app:tint="@color/manu" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addorder"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#56A19292"
+                android:drawableLeft="@drawable/ic_plus_solid"
+                android:fontFamily="@font/adamina"
+                android:paddingStart="100dp"
+                android:paddingEnd="100dp"
+                android:text="Add an Order"/>
         </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="20dp"
-            android:layout_weight="0"
 
-            app:srcCompat="@drawable/angle_down_solid"
-            app:tint="@color/manu" />
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/addorder"
-        android:layout_width="0dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#56A19292"
-        android:paddingStart="100dp"
-        android:paddingEnd="100dp"
-        android:fontFamily="@font/adamina"
-        android:drawableLeft="@drawable/ic_plus_solid"
-        android:text="Add an Order"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/order5" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
